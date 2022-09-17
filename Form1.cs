@@ -1,4 +1,5 @@
-﻿using System;
+﻿using E4.İnharitance.Class;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,17 @@ namespace E4.İnharitance
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Student student = new Student();
+            student.GetFullName();
         }
     }
 }
